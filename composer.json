@@ -16,11 +16,17 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/blazy": "2.14",
         "drupal/bootstrap5": "1.1.3",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
-        "drupal/simplify_menu": "2.1"
+        "drupal/simplify_menu": "2.1",
+        "drupal/slick": "2.7",
+        "drupal/slick_extras": "1.0-rc7",
+        "drupal/slick_views": "2.6",
+        "drupal/twig_vardumper": "3.1.0",
+        "drupal/views_slideshow": "5.0.0"
     },
     "conflict": {
         "drupal/drupal": "*"

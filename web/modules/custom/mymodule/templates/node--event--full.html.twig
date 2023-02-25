@@ -1,0 +1,14 @@
+ <div class="row row-cols-3 g-3">
+ <div class="col">
+    <div class="card">
+<img  src="{{ file_url(elements.field_img['#items'].entity.uri.value) }}"/>
+      <div class="card-body">
+        <h5 class="card-title">{{ name }}</h5>
+            {{ elements.field_date_event.0["#text"] }}
+        <div class="p-3 mb-2 bg-warning text-dark">{{ category }}</div>
+        <p class="card-text">
+          {{ body }}
+        </p>
+      </div>
+    </div>
+  </div>  </div> 

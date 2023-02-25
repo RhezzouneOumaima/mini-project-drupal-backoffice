@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Display and Hide Divs with Bootstrap 5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // hide all divs except the first one
+      $(".myDiv:not(:first)").hide();
+      // when the button is clicked, hide the current div and show the next one
+      $(".btn-next").click(function() {
+        var currentDiv = $(this).closest(".myDiv"); // using closest instead of parent in case the button is inside the div
+        var nextDiv = currentDiv.next(".myDiv");
+        currentDiv.hide();
+        nextDiv.show();
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="myDiv">
+      <h1>{{ elements.field_name }}</h1>
+      <p>This is the content of Div 1.</p>
+      <button class="btn btn-primary btn-next">Next</button>
+    </div>
+  </div>
+</body>
+</html>

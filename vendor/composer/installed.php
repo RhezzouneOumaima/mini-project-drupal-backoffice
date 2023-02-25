@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b83fae73c494c8900eeac9501f0cde79b8900953',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -105,6 +105,15 @@
             'replaced' => array(
                 0 => '9.0.2',
             ),
+        ),
+        'drupal/blazy' => array(
+            'pretty_version' => '2.14.0',
+            'version' => '2.14.0.0',
+            'reference' => '8.x-2.14',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/blazy',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'drupal/block' => array(
             'dev_requirement' => false,
@@ -626,9 +635,9 @@
             ),
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b83fae73c494c8900eeac9501f0cde79b8900953',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -682,6 +691,33 @@
             'reference' => '8.x-2.1',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/simplify_menu',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/slick' => array(
+            'pretty_version' => '2.7.0',
+            'version' => '2.7.0.0',
+            'reference' => '8.x-2.7',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/slick_extras' => array(
+            'pretty_version' => '1.0.0-rc7',
+            'version' => '1.0.0.0-RC7',
+            'reference' => '8.x-1.0-rc7',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick_extras',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/slick_views' => array(
+            'pretty_version' => '2.6.0',
+            'version' => '2.6.0.0',
+            'reference' => '8.x-2.6',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick_views',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -751,6 +787,15 @@
                 0 => '9.0.2',
             ),
         ),
+        'drupal/twig_vardumper' => array(
+            'pretty_version' => '3.1.0',
+            'version' => '3.1.0.0',
+            'reference' => '3.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/twig_vardumper',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/update' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -768,6 +813,15 @@
             'replaced' => array(
                 0 => '9.0.2',
             ),
+        ),
+        'drupal/views_slideshow' => array(
+            'pretty_version' => '5.0.0',
+            'version' => '5.0.0.0',
+            'reference' => '5.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/views_slideshow',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'drupal/views_ui' => array(
             'dev_requirement' => false,

@@ -1,0 +1,47 @@
+<?php
+
+
+function mymodule_theme($existing, $type, $theme, $path) {
+  return [
+      /*  'node__view__flash_news' => [
+          'template'  => 'node--view--flash-news',
+        ]
+        ,
+        'block__views_block__flash_news_block_1' => [
+          'template' => 'block--views-block--flash-news-block-1'
+        ]*/
+        'node__event__full' => [
+          'base hook' => 'node',
+          'template' => 'node--event--full'
+        ],
+        'node__view__events_two_columns' =>
+        [
+          'template' => 'node--view--events-two-columns'
+        ]
+      ];
+
+}
+/**
+ * Implements hook_preprocess_node().
+ */
+
+function mymodule_preprocess_node(&$variables) {
+
+  $node = $variables['node'];
+  if ($node->getType() == 'event') {
+      $variables["name"]=$variables["content"]["field_event_name"][0]["#context"]["value"];
+      $variables["category"]=$variables["content"]["field_category"][0]["#title"];
+      $variables["body"]=$variables["content"]["body"][0]["#text"];
+
+
+    }
+  
+  
+
+ 
+  }
+
+
+
+
+?>
